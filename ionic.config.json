@@ -1,0 +1,7 @@
+{
+  "name": "fune",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
