@@ -2,7 +2,9 @@
   --ion-background-color: #ccfa83;
   //  url("assets/anak.png");
   justify-content: center !important;
-  // --background-image: url('../assets/anak.png');
+  background-image: url('/assets/anak.png');
+  background-position: center;
+  background-size: contain;
 }
 
 .head{

@@ -8,7 +8,7 @@ import { PopoverComponent } from '../popover/popover.component';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  modekids = true;
   constructor(public popoverController: PopoverController, public modalController: ModalController) {}
   async settingsPopover(ev: any) {
     // const siteInfo = { id: 1, name: 'edupala' };
@@ -32,6 +32,10 @@ export class HomePage {
 
   }
   
+  ablekid(){
+    this.modekids = !this.modekids;
+    console.log(this.modekids);
+  }
   gotomeet(){
     window.open('https://meet.google.com/avm-guoz-pax', '_system');
   }

@@ -5,7 +5,9 @@
     </ion-title> -->
     <ion-buttons slot="end">
       <ion-button>
-        <img src="assets/unkidsmode3.jpg" />
+
+        <img *ngIf="modekids == true" (click)="ablekid()" src="assets/kidsmode.png" />
+        <img *ngIf="modekids == false" (click)="ablekid()" src="assets/unkidsmode4.png" />
         <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
       </ion-button>
     </ion-buttons>
