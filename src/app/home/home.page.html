@@ -1,20 +1,42 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="head">
   <ion-toolbar>
-    <ion-title>
+    <!-- <ion-title>
       Blank
-    </ion-title>
+    </ion-title> -->
+    <ion-buttons slot="end">
+      <ion-button>
+        <img src="assets/unkidsmode3.jpg" />
+        <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="settingsPopover($event)">
+        <ion-icon name="book"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="body">
+  <ion-grid>
+    <ion-row style="margin-top: 50px;">
+      <ion-col offset="2">
+        <div style="position: center; justify-content: center;">
+          <ion-card class="kartu" (click)="gotomeet()" style="background-color: #d6f1f8; text-align: center; border-color: green; width: 200px; height: 200px; border-width: 100px 100px 100px 100px;">
+            <img src="assets/anak.png" style="width: 160px; height:100px;" />
+            <ion-card-header>
+    
+              <ion-card-title style="color: black; font-size: 15px;">10 AM - 12 AM</ion-card-title>
+              <ion-card-subtitle>25 Members</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              KELAS TK-A2
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    
+  </ion-grid>
 </ion-content>
