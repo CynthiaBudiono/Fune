@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PopoverController } from '@ionic/angular';
+import { AlertController, ModalController, PopoverController } from '@ionic/angular';
+import { JoinclassComponent } from '../joinclass/joinclass.component';
 
 @Component({
   selector: 'app-popover',
@@ -12,7 +13,7 @@ export class PopoverComponent implements OnInit {
   site;
 
   constructor(
-    private popoverController: PopoverController, private router: Router) { }
+    private popoverController: PopoverController, private router: Router, public modalController: ModalController, private alertCtrl: AlertController) { }
 
   ngOnInit() {
     // this.siteInfo = this.navParams.get('site');
@@ -26,7 +27,23 @@ export class PopoverComponent implements OnInit {
   joinclass() {
     // code for setting wifi option in apps
     this.popoverController.dismiss();
-    this.router.navigate(["joinclass"]);
+    this.presentAlert();
+  }
+
+  async presentAlert() {
+    const alert = await this.alertCtrl.create({
+      cssClass: 'my-custom-class',
+      header: "Room's Code",
+      inputs: [
+        {
+          name: 'kode',
+          placeholder: 'ASD12'
+        }
+      ],
+      buttons: ['Join Now']
+    });
+
+    await alert.present();
   }
 
   myclass() {

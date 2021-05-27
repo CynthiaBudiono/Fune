@@ -1,0 +1,88 @@
+ion-toolbar{
+  --ion-background-color: #f7faa0;
+ }
+
+ .btnstart {
+  // background-color: #f7faa0;
+  color: white;
+  // outline-width: 2px;
+  margin: auto;
+
+  // margin-left: 20px;
+  display: block;
+  background-color:#ff746d;
+  margin-top:10px;
+  border-radius:20px;
+  margin-bottom: 10px;
+}
+
+.alert-wrapper {
+  background: #ccfa83;
+}
+
+.my-custom-class .alert-wrapper {
+  background-color: #ccfa83;
+}
+
+.my-custom-class {
+  --background-color: #ccfa83;
+    // background-color: #F35E5D !important;
+    // background: #F35E5D  !important;
+    // color: red !important;
+    // $alert-md-background-color: #F35E5D;
+    // $alert-ios-background: #F35E5D;
+  
+}
+
+  .body{
+    --ion-background-color: #ccfa83;
+    //  url("assets/anak.png");
+    justify-content: center !important;
+    background-image: url('/assets/anak.png');
+    background-position: center;
+    background-size: contain;
+    --ion-color: black !important;
+  }
+
+  .col{
+    border-bottom: 1px solid #A6ABB1;
+    border-bottom-style: dashed;
+ }
+
+ .col2{
+    border-bottom: 1px solid #A6ABB1;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+
+ img{
+    border-radius: 100%; 
+    border-color: cornsilk;
+    width: 40px; height: 40px;
+ }
+
+//  icon{
+//    color: black !important;
+//  }
+ .rowcon{
+  margin-left: 5%;
+  margin-right: 5%;
+ }
+
+//  .my-custom-class .alert-wrapper {
+//   background: rgb(207, 9, 9);
+//   color: #e06660;
+// }
+
+// .alertDanger{
+//   background-color: white !important;
+//   color: red !important;
+//   button{
+//       color: red !important;
+//   }
+
+  // .alertDanger {
+  //   --ion-background-color: #e5e5e5;
+  // }
+// }
+  

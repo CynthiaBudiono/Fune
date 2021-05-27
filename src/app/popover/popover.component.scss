@@ -7,3 +7,56 @@
     --ion-item-background:#FAF0D7 !important;
     color: black;
 }
+
+.alert-wrapper {
+  background: #ccfa83;
+}
+
+/* Works - pass "my-custom-class" in cssClass to increase specificity */
+.my-custom-class .alert-wrapper {
+  background-color: #ccfa83;
+}
+
+.my-custom-class {
+  --background-color: #ccfa83;
+  
+}
+
+
+// .my-custom-class .alert-wrapper {
+//   --ion-item-backgroundbackground: #ce0e0e;
+//     text-align: center;
+//   }
+
+// .bottom-sheet-popover .popover-content {
+//     width: 100% !important;
+//       left: 0 !important;
+//       bottom: 0 !important;
+//       right: 0 !important;
+//       top: calc(100% - 200px) !important;
+//       max-height: 200px;
+//       min-height: 200px; 
+//   }
+
+//   .my-custom-class .modal-wrapper {
+//     --ion-item-background: #ce0e0e;
+//     --width: 60%;
+//     --height: 70%;
+//     border-radius: 50px 50px 0 0;
+//     // width: 100% !important;
+//     // left: 0 !important;
+//     // bottom: 0 !important;
+//     // right: 0 !important;
+//     // top: calc(100% - 200px) !important;
+//     // max-height: 200px;
+//     // min-height: 200px; 
+// //     background: rgb(190, 20, 20) !important;
+// //     height: 20% !important;
+// //    top: 80% !important;
+// //    position: absolute !important; 
+// //    display: block !important;  
+//   }
+
+//   .my-custom-class {
+//     --ion-item-background: rgb(196, 28, 28);
+//   }
